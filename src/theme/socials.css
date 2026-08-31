@@ -1,0 +1,26 @@
+.author-line {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.85em;
+    opacity: 0.7;
+}
+
+.social-icons {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.author-line svg {
+    width: 1.15em;
+    height: 1.15em;
+    fill: var(--fg);
+    opacity: 0.7;
+    transition: opacity 0.15s ease;
+}
+
+.author-line a:hover svg {
+    opacity: 1;
+}

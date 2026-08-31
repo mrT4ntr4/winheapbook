@@ -1,0 +1,12 @@
+[book]
+title = "Windows Kernel Segment Heap Notes"
+authors = ["mrT4ntr4"]
+language = "en"
+src = "src"
+
+[output.html]
+site-url = "/winheapbook/"
+additional-css = ["src/theme/diagram-themes.css", "src/theme/reading-meta.css", "src/theme/socials.css"]
+additional-js = ["src/theme/diagram-lightbox.js"]
+
+[preprocessor.reading-time]

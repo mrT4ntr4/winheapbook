@@ -2,9 +2,13 @@
 
 There is a lot to digest when it comes to windows kernel segment heap and the best way for me was to make my own diagrams and notes to understand it. I took the help from the following references. There are plenty of great resources on heap memory in Linux, but finding a single, comprehensive resource for Windows is much harder. A lot of the information is scattered across research papers, blog posts, conference talks and other sources, so I thought I'd put what I've learned together and share it with you all. It also gives me something I can come back to and use as a reference later on. These notes cover pool types, different allocators like LFH, VS, the backend segment allocator, large blocks and at last, some exploitation techniques for kernel pool overflows using named pipes.
 
-I've tried my best to make this book self-explanatory, enough to understand how the segment heap works and just enough to learn how to exploit it. If something still doesn't make sense, you can take help from the links below.
+Everything here targets Windows 10 20H2. The full source of this book is available on GitHub. Please feel free to open an issue or a PR if you find something incorrect or missing.
 
-Everything here targets Windows 10 20H2. If you find something incorrect or any useful information missing, please let me know :)
+<p class="repo-link">
+  <a href="https://github.com/mrT4ntr4/winheapbook"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg> https://github.com/mrT4ntr4/winheapbook</a>
+</p>
+
+I've tried my best to make this book self-explanatory, enough to understand how the segment heap works and just enough to learn how to exploit it. If something still doesn't make sense, you can take help from the links below.
 
 <p class="author-line">
   <em>- mrT4ntr4</em>

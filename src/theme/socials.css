@@ -24,3 +24,24 @@
 .author-line a:hover svg {
     opacity: 1;
 }
+
+.repo-link {
+    display: table;
+    margin: 1rem 0;
+    padding: 0.6rem 1rem;
+    background: rgba(127, 127, 127, 0.15);
+    border-left: 4px solid var(--icons);
+    border-radius: 4px;
+}
+
+.repo-link a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.repo-link svg {
+    width: 1.15em;
+    height: 1.15em;
+    fill: currentColor;
+}
